@@ -1,7 +1,12 @@
 version: '0.0.1'
 
 services:
+  victim:
+    build: victim_server/
+    image: victim
+    ports: 5000
   hacker:
-    build: .
-    image: secops
-    ports: 
+    build: hacker/
+    image: hacker
+    ports: 8080
+
