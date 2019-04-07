@@ -7,6 +7,7 @@ RUN \
     apt-get install -y nmap && \
     apt-get install -y openssl
 
+COPY src /tmp/src 
 
 ENTRYPOINT ["bash"]
 
