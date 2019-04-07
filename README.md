@@ -1,1 +1,1 @@
-# secops-scenario
+# secops-scenarios
