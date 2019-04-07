@@ -1,0 +1,27 @@
+version: 0.0.1
+
+services:
+  gryph:
+    build: .
+    volumes:
+      - hogwarts-volume:/tmp 
+    tty: true
+  slyvr:
+    build: .
+    volumes: 
+      - hogwarts-volume:/opt
+    tty: true
+  huffl:
+    build: .
+    volumes: 
+      - hogwarts-volume:/media
+    tty: true
+  raven:
+    build: .
+    volumes: 
+      - hogwarts-volume:/home
+    tty: true
+
+      
+volumes:
+  hogwarts-volume:
